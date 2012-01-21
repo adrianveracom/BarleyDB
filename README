@@ -1,0 +1,26 @@
+
+#
+#
+#		BarleyDB library
+#   www.barleydb.com
+#
+#		@author adrianvera
+#
+
+
+##### WHY BarleyDB
+
+Many times you want to use simple db functions to interact with your databse but when you start you have to program
+exceptions, errors and more.. now you can include our BarleyDB library and forget it!
+
+
+##### Improve the code
+
+BarleyDB code is available on github, you can fork it and improve it :D This is only de base of any database access 
+library
+
+##### AUTHOR
+
+Adrian Vera
+@adrianveracom
+adrian [at] code4play [dot] com
