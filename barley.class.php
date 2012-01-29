@@ -69,6 +69,8 @@ class Barley
 			{
 				self::debugQuery($query,$start,$end);
 			}
+
+			return $result;
 		}
 		catch(Exception $e)
 		{
@@ -79,7 +81,17 @@ class Barley
 
 	private static function prepare($query)
 	{
-		return mysql_real_escape_string($query);
+		$prepareExpr = '/{(.*)}/U';
+
+		preg_match_all($prepareExpr, $query, $matches);
+
+		for ($i = 0; $i < count($matches[0]); $i++)
+		{
+			$param = mysql_real_escape_string($matches[1][$i]);
+			$query = str_replace ($matches[0][$i], $param, $query);
+		}
+		
+		return $query;
 	}
 
 

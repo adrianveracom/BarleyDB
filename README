@@ -1,10 +1,10 @@
 
 #
 #
-#		BarleyDB library
-#   www.barleydb.com
+# BarleyDB library
+# www.barleydb.com
 #
-#		@author adrianvera
+# @author adrianvera
 #
 
 
@@ -16,8 +16,7 @@ exceptions, errors and more.. now you can include our BarleyDB library and forge
 
 ##### Improve the code
 
-BarleyDB code is available on github, you can fork it and improve it :D This is only de base of any database access 
-library
+BarleyDB code is available on github, you can fork it and improve it :D This is only de base of any database access library
 
 ##### AUTHOR
 

@@ -1,10 +1,10 @@
 
 #
 #
-#		BarleyDB library
-#   www.barleydb.com
+# BarleyDB library
+# www.barleydb.com
 #
-#		@author adrianvera
+#	@author adrianvera
 #
 
 
@@ -28,6 +28,9 @@ Barley::enableDebug();
 
 // Execute your query
 $result = Barley::query('SELECT * FROM `beers` WHERE barley = 200');
+
+// Escape your params use { param }
+$result = Barley::query('SELECT * FROM `beers` WHERE barley_name = "{'.$barley_name.'}");
 
 // If you want to see your debug info
 $debugInfo = Barley::debugInfo();
